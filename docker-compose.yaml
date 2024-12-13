@@ -59,12 +59,12 @@ services:
             - "8000:8000"
         restart: on-failure
 
-    frontend:
-        build: ./frontend/docker
-        container_name: frontend
-        ports:
-            - "8000:8000"
-            - "443:443"
+    # frontend:
+    #     build: ./frontend/docker
+    #     container_name: frontend
+    #     ports:
+    #         - "8000:8000"
+    #         - "443:443"
         # depends_on:
         # - backend
 
